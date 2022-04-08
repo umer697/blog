@@ -42,12 +42,15 @@
     <!-- Navbar -->
     @include('backpanel.layouts.topbar')
     <!-- End Navbar -->
-    <div class="container-fluid py-4">
-      <div class="row min-vh-80 h-100">
+    <div class="container-fluid py-4 border border-success">
+      <div class="row min-vh-80 h-100 border border-primary">
         <div class="col-12">
-
+            {{-- content goes here --}}
+            @yield('content')
         </div>
-    {{-- </div>
+    </div>
+    </div>
+     {{--
     <footer class="footer pt-5">
       <div class="container-fluid">
         <div class="row align-items-center justify-content-lg-between">
@@ -80,9 +83,10 @@
         </div>
       </div>
     </footer>
-  </div> --}}
+  --}}
   </main>
-  <div class="fixed-plugin">
+
+  {{-- <div class="fixed-plugin">
     <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
       <i class="material-icons py-2">settings</i>
     </a>
@@ -154,7 +158,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
 
   <!--   Core JS Files   -->
